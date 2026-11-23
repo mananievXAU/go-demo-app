@@ -1,4 +1,4 @@
-module github.com/mananievXAU/go-demo-app
+module example.com/main
 
 go 1.16
 

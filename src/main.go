@@ -43,7 +43,7 @@ func main() {
 
 	AppName := flag.String("name", "k8sdiy", "application name")
 	AppRole := flag.String("role", "api", "app role: api data ascii img ml5 iot")
-	AppPort := flag.String("port", "9090", "application port")
+	AppPort := flag.String("port", "8080", "application port")
 	//AppPath := flag.String("path", "/static/", "path to serve static files")
 	//AppDir := flag.String("dir", "./ml5", "the directory of static files to host")
 	//ModelsPath := flag.String("mpath", "/models/", "path to serve models files")
@@ -82,8 +82,8 @@ func main() {
 		for {
 			select {
 			case <-time.After(time.Second * 1):
-				//	ts := time.Since(t0)
-				//	log.Println("[", Role, "] time: ", ts, " requests: ", REQ0, " rps: ", (REQ0-REQ1)/1, " throughput:", float64(REQ0)/ts.Seconds())
+			//	ts := time.Since(t0)
+			//	log.Println("[", Role, "] time: ", ts, " requests: ", REQ0, " rps: ", (REQ0-REQ1)/1, " throughput:", float64(REQ0)/ts.Seconds())
 				REQ1 = REQ0
 			}
 		}
