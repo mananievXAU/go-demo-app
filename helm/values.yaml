@@ -54,6 +54,6 @@ api-gateway:
   image:
     tag: 1.14.4
   service:
-    type: NodePort
+    type: LoadBalancer
     port: 80
     targetPort: 8080
